@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=scr, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ent = (prompt('Digite a frase que se deseja verificar: '));
+        const convert = ent.toUpperCase();
+        const letra = "A";
+        var quantidade = 0;
+            if (convert.includes(letra)) {
+                document.write('A string apresenta a letra ' + letra + ' ');
+            } else {
+                document.write('A string não apresenta a letra ' + letra + ' ')
+            }
+            for (var i = 0; i < convert.length; i++) {
+                if (convert[i] == letra) {
+                 quantidade++
+  }
+}
+    if (quantidade > 0)
+         document.write(quantidade + 'vez(es).')
+    </script>
+</body>
+</html>

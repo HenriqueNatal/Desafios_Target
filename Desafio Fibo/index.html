@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=scr, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Aqui foi aberta uma parte de códico em JavaScript dentro do HTML, e definidas as variáves a serem utlizadas//
+        var ent = parseInt(prompt('Digite o valor que se deseja verificar: '));
+        var num1 = 1;
+        var num2 = 0;
+        var num3 = 0;
+        while(true){
+//Aqui o programa compara se o valor da entrada corresponde a um número maior que o da variavel 3 que é a de controle, ou seja, maior que "0".//
+        if(num3 >= ent){
+            document.write('Este número ' + ent + ' não pertence a sequência de Fibonnacci!')
+            break;
+//Aqui caso o valor da entrada do usuário for maior que o da variavel, o programa entra no "loop"//
+        }else{
+            document.write(num3 + " - ")
+            num3 = num2 + num1;
+            num1 = num2;
+            num2 = num3;
+        }
+    }
+    </script>
+</body>
+</html>
